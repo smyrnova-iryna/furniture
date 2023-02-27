@@ -234,3 +234,81 @@ body {
     margin-bottom: 1%;
 }
 
+.strengths-container {
+    background-color: var(--light-main-color);
+    padding-top: 5%;
+    color: var(--dark-main-color);
+    min-height: 462px;
+}
+
+.strengths-heading-container {
+    display: flex;
+    justify-content: center;
+}
+
+.main-heading {
+    font-weight: 700;
+    font-size: 3rem;
+    background: linear-gradient(to right, var(--details-first-color) 5%, var(--light-main-color) 5%);
+}
+
+.strengths-items-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2%;
+}
+
+.first-item {
+    background-image: url("img/Rectangle\ 172.png");
+}
+
+.second-item {
+    background-image: url("img/Rectangle\ 169.png");
+}
+
+.third-item {
+    background-image: url("img/Rectangle\ 170.png");
+}
+
+.strengths-item {
+    background-size: cover;
+    width: 32%;
+    min-height: 15rem;
+    margin-bottom: 0;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: end;
+}
+
+.strengths-items-icon-left {
+    position: absolute;
+    align-self: center;
+    justify-self: flex-start;
+    margin-left: 1%;
+}
+
+.strengths-items-icon-right {
+    position: absolute;
+    align-self: center; 
+    right: 3%;
+} 
+
+.strengths-item-heading {
+    font-weight: 700;
+    font-size: 2rem;
+    color: var(--light-main-color);
+    padding: 1%;
+    width: max-content;
+    background: linear-gradient(to top, var(--details-first-color) 5%, rgb(255, 255, 128, 0) 5%);
+}
+
+.strengths-item-text {
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--light-main-color);
+    margin-top: 0;
+}
