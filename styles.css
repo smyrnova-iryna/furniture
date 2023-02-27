@@ -123,6 +123,10 @@ body {
     margin-left: 5%;
 }
 
+.header-bottom-logo-text-details {
+    color: var(--details-first-color);
+}
+
 .header-bottom-button-container {
     display: flex;
     flex-direction: row;
@@ -132,6 +136,9 @@ body {
 .header-button, .header-callback-button {
     height: 60%;
     border: none;
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 700;
 }
 
 .header-button {
@@ -144,5 +151,86 @@ body {
 .header-callback-button {
     border-radius: 3px;
     background-color: var(--details-first-color);
-    color: var(--light-main-color)
+    color: var(--light-main-color);
 } 
+
+.slider-container {
+    background-image: url('img/Rectangle\ 137.jpg');
+    background-size: cover;
+    min-height: 785px;
+    display: flex;
+    flex-direction: row;
+    padding-left: 3%;
+    max-width: 100%;
+    color: var(--dark-main-color);
+}
+
+.slider-and-border-container {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 10%;
+    width: 30%;
+}
+
+.slider-border {
+    background-color: var(--details-first-color);
+    width: 1rem;
+}
+
+.slider {
+    background-color: var(--light-main-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5% 10%;
+    justify-content: flex-start;
+}
+
+.slider-heading {
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 100%;
+    margin-bottom: 0;
+}
+
+.slider-main-text {
+    font-weight: 700;
+    font-size: 1.75rem;
+    margin-bottom: 3%;
+    margin-top: 16%;
+}
+
+.slider-text {
+    font-size: 1.75rem;
+    text-align: center;
+    margin-top: 0; 
+}
+
+.slider-button {
+    font-weight: 700;
+    font-size: 1rem;
+    width: 50%;
+    min-height: 8%;
+    border: none;
+    background-color: var(--details-first-color);
+    color: var(--light-main-color);
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 700;
+    margin-bottom: 10%;
+}
+
+.slider-count-number {
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.slider-count-ammount {
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+.slider-count {
+    margin-bottom: 1%;
+}
+
