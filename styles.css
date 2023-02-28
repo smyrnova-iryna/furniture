@@ -176,7 +176,6 @@ body {
 .slider {
     background-color: var(--light-main-color);
     display: flex;
-    flex-direction: row;
     flex-direction: column;
     align-items: center;
     padding: 5% 10%;
@@ -375,11 +374,6 @@ body {
     padding-left: 0;
 }
 
-/* .goods-categories-catalog-item :hover {
-    height: 16rem;
-    
-} */
-
 .goods-categories-catalog-item-text-container {
     background-size: cover;
     background-position-x: center;
@@ -454,7 +448,7 @@ body {
 
 .about-us-main-container {
     min-height: 700px;
-    background-color: gray;
+    background-color: var(--light-main-color);
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -497,3 +491,70 @@ body {
     text-transform: uppercase;
 }
 
+
+
+.contact-us-main-container {
+    min-height: 700px;
+    background-color: var(--light-main-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.contact-us-photo-block {
+    background-image: url(img/Rectangle\ 175.jpg);
+    background-size: cover;
+    background-position-x: 50% 50%;
+    background-repeat: no-repeat;
+    min-height: 600px;
+    width: 85%;
+}
+
+.contact-us-text-block {
+    position: absolute;
+    right: 3%;
+    max-width: 25%;
+    max-height: 40%;
+    display: flex;
+    flex-direction: column;
+    padding: 3%;
+    background: linear-gradient(to right, var(--details-first-color) 2%, var(--light-main-color) 2%);
+}
+
+.contact-us-text-block-content-heading {
+    font-weight: 700;
+    font-size: 2rem;
+    margin-top: 0;
+}
+
+.contact-us-text-block-content-input, .contact-us-text-block-content-button {
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 2%;
+    font-weight: 400;
+    font-size: 1rem;
+    margin-bottom: 3%;
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    
+}
+
+.contact-us-text-block-content-button {
+    border: none;
+    background-color: var(--details-first-color);
+    color: var(--light-main-color);
+    font-weight: 700;
+}
+
+.contact-us-text-block-content-text {
+    text-align: left;
+    font-weight: 400;
+}
+
+.contact-us-text-block-content-link {
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--dark-main-color);
+}
