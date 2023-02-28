@@ -558,3 +558,123 @@ body {
     font-weight: 700;
     color: var(--dark-main-color);
 }
+
+.back-arrow {
+    position: absolute;
+}
+
+.footer {
+    background-color: var(--dark-main-color);
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-text-block {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    padding: 2.5%;
+}
+
+.footer-image-block {
+    background-image: url(img/Rectangle\ 176.png);
+    background-size: cover;
+    background-position-x: 30% 70%;
+    background-repeat: no-repeat;
+    min-height: 400px;
+    width: 60%;
+
+}
+
+.footer-text-block-heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom: 0;
+    align-items: center;
+}
+
+.footer-text-block-heading-text {
+    font-weight: 700;
+    font-size: 3rem;
+    color: var(--light-main-color);
+    margin-left: 2%;
+}
+
+.footer-text-block-heading-text-details {
+    color: var(--details-first-color);
+}
+
+.footer-text-and-links-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer-text-block-links-container {
+    width: 55%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.footer-text-block-links-left-container, .footer-text-block-links-right-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    justify-content: space-evenly;
+}
+
+.footer-text-block-links-right-container {
+    padding-bottom: 25%;
+}
+
+.footer-text-block-link {
+    color: var(--light-main-color);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.footer-text-block-link-details {
+    color: var(--details-first-color);
+}
+
+.footer-text-block-contacts-container {
+    margin-right: 6%;
+}
+
+.footer-text-block-contact {
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--light-main-color);
+}
+
+.footer-text-block-contact-link {
+    text-decoration: none;
+}
+
+.footer-link-icons-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.footer-text-block-bottom-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 5%;
+    justify-content: space-between;
+    padding-right: 5%;
+}
+
+.footer-text-block-bottom-text {
+    font-weight: 400;
+    font-size: 0.7rem;
+    display: flex;
+    align-items: center;
+    color: var(--light-main-color);
+}
