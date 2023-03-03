@@ -6,7 +6,6 @@ body {
     font-family: 'Proxima Nova';
     font-style: normal;
     overflow-x: hidden;
-    /* overflow: hidden; */
 }
 
 :root {
@@ -15,6 +14,7 @@ body {
     --details-first-color: #44C697;
     --details-second-color: #FF1B1B;
     --details-third-color: rgba(188, 189, 187, 1);
+    --dark-main-color-background: rgba(30, 46, 54, 0.2);
   }
 
 .header {
@@ -26,7 +26,7 @@ body {
 
 .header-upper {
     display: flex;
-    flex-direction: raw;
+    flex-direction: row;
     justify-content: space-between;
     align-items: baseline;
     padding: 0.5% 3%;
@@ -36,14 +36,14 @@ body {
 
 .header-upper-left-container {
     display: flex;
-    flex-direction: raw;
+    flex-direction: row;
     min-width: 38%;
     align-items: center;
 }
 
 .header-upper-left-container-links {
     display: flex;
-    flex-direction: raw;
+    flex-direction: row;
     align-items: center;
     margin-left: 1%;
     margin-right: 10%;
@@ -51,7 +51,7 @@ body {
 
 .header-link-group {
     display: flex;
-    flex-direction: raw;
+    flex-direction: row;
     align-items: center;
     min-width: 28%;
     justify-content: space-between;
@@ -59,7 +59,7 @@ body {
 
 .header-upper-right-container {
     display: flex;
-    flex-direction: raw;
+    flex-direction: row;
     justify-content: flex-end;
     min-width: 35%;
     font-weight: 700;
@@ -71,6 +71,10 @@ body {
     color: var(--dark-main-color);
     text-decoration: none;
     font-weight: 700;
+}
+
+.phone-number {
+    min-width: 160px;
 }
 
 .link-page-mark {
@@ -100,10 +104,10 @@ body {
 
 .header-bottom-links {
     display: flex;
-    flex-direction: raw;
+    flex-direction: row;
     justify-content: space-between;
     min-width: 36%;
-    align-items: center;
+    align-items: flex-start; 
 
 }
 
@@ -782,3 +786,76 @@ body {
     align-items: center;
     color: var(--light-main-color);
 }
+
+/* АДАПТИВКА,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,, */
+
+@media (max-width: 1100px) {
+    .header-bottom-logo-container {
+        margin-right: 1%;
+    }
+    .header {
+        font-size: 0.7rem;
+    }
+    .header-upper-left-container-links {
+        margin-right: 2%;
+    }
+    .phone-number {
+        min-width: 120px;
+    }
+}
+
+@media (max-width: 700px) {
+    .header-bottom {
+        flex-direction: column;
+    }
+    .header-bottom-logo-container {
+        justify-content: center  
+    }
+    .header-bottom-logo {
+        max-width: 50px1;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .header-upper, .header-bottom {
+        flex-direction: column;
+    }
+    .header-upper-left-container, .header-upper-right-container {
+        width: 100%;
+        justify-content: center;
+
+    }
+   .header-bottom-logo-container, .header-bottom-button-container {
+        align-self: center;
+    }
+    .header-bottom-logo {
+        max-width: 50px;
+    }
+    .header-bottom-links {
+        margin-top: 3%;
+    }
+}
+
+@media (max-width: 400px) {
+    .header-bottom-links, .header-upper-right-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .header-upper-right-container {
+        margin-bottom: 2%;
+    }
+    .header-bottom-link, .link-adaptive {
+        background-color: var(--dark-main-color-background);
+        width: 100%;
+        margin-bottom: 1%;
+    }
+    .link-adaptive {
+        margin-left: 0;
+    }
+   .header-bottom-button-container {
+    margin-bottom: 5%;
+    }
+}
+
+
