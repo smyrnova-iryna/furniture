@@ -164,7 +164,7 @@ body {
 .slider-container {
     background-image: url('img/Rectangle\ 137.jpg');
     background-size: cover;
-    min-height: 785px;
+    height: 785px;
     display: flex;
     flex-direction: row;
     padding-left: 3%;
@@ -789,7 +789,7 @@ body {
 
 /* АДАПТИВКА,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,, */
 
-@media (max-width: 1100px) {
+@media screen and (max-width: 1100px) {
     .header-bottom-logo-container {
         margin-right: 1%;
     }
@@ -802,9 +802,19 @@ body {
     .phone-number {
         min-width: 120px;
     }
+    .slider-and-border-container {
+        width: 55%;
+    }
 }
 
-@media (max-width: 700px) {
+@media screen and (max-width: 900px) {
+    .slider-and-border-container {
+        width: 60%;
+    }
+   
+}
+
+@media screen and (max-width: 700px) {
     .header-bottom {
         flex-direction: column;
     }
@@ -814,10 +824,19 @@ body {
     .header-bottom-logo {
         max-width: 50px1;
     }
+    .slider-heading {
+        font-size: 1.5rem;
+    }
+    .slider-main-text{
+        font-size: 1rem;
+    }
+    .slider-text , .slider-button  {
+        font-size: 0.8rem;
+    }
 }
 
 
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
     .header-upper, .header-bottom {
         flex-direction: column;
     }
@@ -835,9 +854,21 @@ body {
     .header-bottom-links {
         margin-top: 3%;
     }
+    
 }
 
-@media (max-width: 400px) {
+@media  screen and (max-width: 450px) {
+    .slider-and-border-container {
+        max-height: 400px;
+        width: 80%;
+    }
+    .slider-container {
+        height: 400px;
+    }
+
+} 
+
+@media  screen and (max-width: 400px) {
     .header-bottom-links, .header-upper-right-container {
         flex-direction: column;
         align-items: flex-start;
