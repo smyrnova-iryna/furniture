@@ -623,8 +623,8 @@ body {
 .contact-us-text-block {
     position: absolute;
     right: 3%;
-    max-width: 25%;
-    max-height: 40%;
+    width: 25%;
+    min-height: 40%;
     display: flex;
     flex-direction: column;
     padding: 3%;
@@ -835,7 +835,7 @@ body {
         font-size: 0.5rem;
         display: block;
     }
-    .about-us-text-block {
+    .about-us-text-block , .contact-us-text-block {
         width: 40%
     }
 }
@@ -870,7 +870,7 @@ body {
     .goods-categories-catalog-items-container {
         width: 95%;
     }
-    .about-us-text-block {
+    .about-us-text-block , .contact-us-text-block {
         width: 70%
     }
 
@@ -974,7 +974,7 @@ body {
    .header-bottom-button-container {
         margin-bottom: 5%;
     }
-    .about-us-text-block {
+    .about-us-text-block , .contact-us-text-block{
         width: 85%
     }
 }
