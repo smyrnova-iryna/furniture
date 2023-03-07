@@ -576,8 +576,8 @@ body {
 .about-us-text-block {
     position: absolute;
     left: 3%;
-    max-width: 30%;
-    max-height: 40%;
+    width: 30%;
+    min-height: 40%;
     display: flex;
     flex-direction: row-reverse;
     padding: 3%;
@@ -790,6 +790,7 @@ body {
 
 /* АДАПТИВКА,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,, */
 
+
 @media screen and (max-width: 1100px) {
     .header-bottom-logo-container {
         margin-right: 1%;
@@ -834,6 +835,9 @@ body {
         font-size: 0.5rem;
         display: block;
     }
+    .about-us-text-block {
+        width: 40%
+    }
 }
 
 @media screen and (max-width: 700px) {
@@ -865,6 +869,9 @@ body {
     }
     .goods-categories-catalog-items-container {
         width: 95%;
+    }
+    .about-us-text-block {
+        width: 70%
     }
 
 
@@ -966,6 +973,9 @@ body {
     }
    .header-bottom-button-container {
         margin-bottom: 5%;
+    }
+    .about-us-text-block {
+        width: 85%
     }
 }
 
