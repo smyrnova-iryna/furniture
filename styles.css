@@ -296,7 +296,6 @@ body {
     min-height: 15rem;
     margin-bottom: 0;
     padding: 2.5%;
-    
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -909,6 +908,10 @@ body {
         width: 100%;
         position: absolute;
         background-position: bottom;
+    }
+
+    .strengths-carousel-slide1 , .strengths-carousel-slide2 , .strengths-carousel-slide3 {
+        height: 350px;
     }
 
     .strengths-item-heading {
