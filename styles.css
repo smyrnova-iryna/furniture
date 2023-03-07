@@ -5,7 +5,7 @@ body {
     padding: 0;
     font-family: 'Proxima Nova';
     font-style: normal;
-    overflow-x: hidden;
+    /* overflow: hidden; */
     max-width: 100%;
 }
 
@@ -243,7 +243,6 @@ body {
     padding-top: 5%;
     color: var(--dark-main-color);
     min-height: 462px;
-    overflow: hidden;
 }
 
 .heading-container {
@@ -255,6 +254,12 @@ body {
     font-weight: 700;
     font-size: 3rem;
     background: linear-gradient(to right, var(--details-first-color) 15px, var(--light-main-color) 15px);
+}
+
+.strengths-carousel-wrapper {
+    position: relative;
+    min-height: 400px;
+    overflow: hidden;
 }
 
 .strengths-carousel-slider {
@@ -269,7 +274,6 @@ body {
     justify-content: space-around;
     align-items: center;
     -webkit-transition: -webkit-transform 1600ms;
-    overflow: hidden;
  }
   
 
@@ -292,6 +296,7 @@ body {
     min-height: 15rem;
     margin-bottom: 0;
     padding: 2.5%;
+    
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -303,7 +308,6 @@ body {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    overflow: hidden;
   }
 
   .strengths-carousel-slide1 {
@@ -917,10 +921,6 @@ body {
         font-size: 0.8rem;  
     }
 
-    .strengths-carousel-slider {
-        overflow: hidden;
-
-    }
     .main-heading {
         font-size: 2rem;
     }
@@ -948,9 +948,6 @@ body {
     }
     .footer-text-block-contact {
         font-size: 0.7rem;
-    }
-    body {
-        overflow-x: hidden;
     }
 
 }
