@@ -6,6 +6,7 @@ body {
     font-family: 'Proxima Nova';
     font-style: normal;
     overflow-x: hidden;
+    max-width: 100%;
 }
 
 :root {
@@ -268,6 +269,7 @@ body {
     justify-content: space-around;
     align-items: center;
     -webkit-transition: -webkit-transform 1600ms;
+    overflow: hidden;
  }
   
 
@@ -301,6 +303,7 @@ body {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    overflow: hidden;
   }
 
   .strengths-carousel-slide1 {
@@ -775,7 +778,6 @@ body {
     color: var(--light-main-color);
 }
 
-/* АДАПТИВКА,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,, */
 
 
 @media screen and (max-width: 1100px) {
@@ -946,6 +948,9 @@ body {
     }
     .footer-text-block-contact {
         font-size: 0.7rem;
+    }
+    body {
+        overflow-x: hidden;
     }
 
 }
