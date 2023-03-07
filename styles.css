@@ -680,7 +680,7 @@ body {
 }
 
 .footer-text-block {
-    width: 40%;
+    min-width: 40%;
     display: flex;
     flex-direction: column;
     padding: 2.5%;
@@ -723,21 +723,8 @@ body {
 
 .footer-text-block-links-container {
     width: 55%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-
-.footer-text-block-links-left-container, .footer-text-block-links-right-container {
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-    justify-content: space-evenly;
-}
-
-.footer-text-block-links-right-container {
-    padding-bottom: 25%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .footer-text-block-link {
@@ -813,6 +800,10 @@ body {
     .strengths-item-text {
         font-size: 0.5rem;
     }
+    .footer-text-block , .footer-image-block {
+        width: 50%;
+        align-items: center;
+    }
 }
 
 @media screen and (max-width: 900px) {
@@ -837,6 +828,12 @@ body {
     }
     .about-us-text-block , .contact-us-text-block {
         width: 40%
+    }
+    .footer-text-block {
+        width: 60%
+    }
+    .footer-image-block {
+        width: 40%;
     }
 }
 
@@ -873,12 +870,12 @@ body {
     .about-us-text-block , .contact-us-text-block {
         width: 70%
     }
-
-
-    /* .goods-categories-catalog-description {
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-    } */
+    .footer-text-block {
+        width: 70%
+    }
+    .footer-image-block {
+        max-width: 30%;
+    }
 
 }
 
@@ -931,6 +928,26 @@ body {
         grid-template-columns: 1fr 1fr;
     }
 
+    .footer-text-block {
+        width: 100%;
+        justify-content: space-between;
+    }
+    .footer-image-block {
+        width: 0;
+    }
+    .footer-text-block-heading-text {
+        font-size: 1.8rem;
+    }
+    .footer-logo {
+        width: 60px
+    }
+    .footer-text-block-link {
+        font-size: 0.8rem;
+    }
+    .footer-text-block-contact {
+        font-size: 0.7rem;
+    }
+
 }
 
 @media  screen and (max-width: 450px) {
@@ -977,6 +994,7 @@ body {
     .about-us-text-block , .contact-us-text-block{
         width: 85%
     }
+   
 }
 
 
