@@ -224,20 +224,6 @@ body {
     margin-bottom: 10%;
 }
 
-.slider-count-number {
-    font-weight: 700;
-    font-size: 2rem;
-}
-
-.slider-count-ammount {
-    font-weight: 700;
-    font-size: 1.25rem;
-}
-
-.slider-count {
-    margin-bottom: 1%;
-}
-
 .strengths-container {
     background-color: var(--light-main-color);
     padding-top: 5%;
@@ -779,6 +765,11 @@ body {
     display: flex;
     align-items: center;
     color: var(--light-main-color);
+    margin-left: 2%;
+}
+
+.header-button , .header-callback-button , .slider-button , .goods-categories-button , .contact-us-text-block-content-button {
+    cursor: pointer;
 }
 
 
